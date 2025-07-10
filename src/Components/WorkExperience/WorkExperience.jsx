@@ -10,29 +10,30 @@ function WorkExperience() {
 
   return (
     <div className="workExperience">
-      <div className="workExperience-left">
-        <span style={{ color: darkMode ? "white" : "" }}>Work</span>
-        <span>Experience</span>
-        <span style={{ color: darkMode ? "white" : "" }}>
+      <div className="workExperience-heading">
+        <h2
+          className="mainHead"
+          style={{ color: darkMode ? "white" : "black" }}
+        >
+          Work
+        </h2>
+        <h2 className="mainHead" style={{ color: "var(--orange)" }}>
+          Experience
+        </h2>
+        <p
+          className="mainHead"
+          style={{ color: darkMode ? "white" : "var(--gray)" }}
+        >
           What I have Done so far.
-        </span>
+        </p>
       </div>
 
-      <div className="workExperience-right">
-        <div className="workExperienceDisplay">
-          {workExperienceInfo.map((information, index) => {
-            let positionClass = "";
-            if (index === 0) positionClass = "card-top-right";
-            if (index === 1) positionClass = "card-bottom-left";
-            if (index === 2) positionClass = "card-center";
-
-            return (
-              <div className={positionClass} key={index}>
-                <WorkExperienceCards info={information} />
-              </div>
-            );
-          })}
-        </div>
+      <div className="workExperienceDisplay">
+        {workExperienceInfo.map((info, index) => (
+          <div className="card-wrapper" key={index}>
+            <WorkExperienceCards info={info} />
+          </div>
+        ))}
       </div>
     </div>
   );

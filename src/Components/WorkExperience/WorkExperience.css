@@ -1,168 +1,72 @@
 .workExperience {
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem;
-  gap: 2rem;
-}
-.workExperience-left {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.workExperience-left > :nth-child(1) {
-  color: var(--black);
+.workExperience-heading {
+  margin-bottom: 2rem;
+}
+
+.workExperience-heading h2 {
   font-size: 2.5rem;
   font-weight: bold;
+  margin: 0;
 }
-.workExperience-left > :nth-child(2) {
-  color: var(--orange);
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-.workExperience-left > :nth-child(3) {
-  font-weight: 500;
-  color: var(--gray);
+
+.workExperience-heading p {
   font-size: 14px;
-  margin-top: 5px;
-}
-
-.workExperience-right {
-  flex: 1;
-  position: relative;
-  height: 500px;
+  font-weight: 500;
+  margin-top: 0.5rem;
 }
 
 .workExperienceDisplay {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.card-top-right {
-  position: absolute;
-  top: -30%;
-  right: -7%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
 }
 
-.card-bottom-left {
-  position: absolute;
-  bottom: 25%;
-  left: -48%;
+.card-wrapper {
+  flex: 1 1 30%;
+  display: flex;
 }
 
-.card-center {
-  position: absolute;
-  top: 72%;
-  left: 29%;
+@media (max-width: 1460px) {
+  .card-wrapper {
+    flex: 1 1 45%;
+  }
 }
 
-@media (max-width: 1443px) {
-  .workExperience {
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    height: auto;
-    align-items: center;
-  }
-
-  .workExperience-left,
-  .workExperience-right {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-  }
-
-  .workExperienceDisplay {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    position: static;
-    height: auto;
-    width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
-    align-items: center;
-  }
-
-  .card-top-right,
-  .card-bottom-left,
-  .card-center {
-    position: static;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
+@media (max-width: 1015px) {
   .workExperienceCards {
-    width: 100%;
-    max-width: 100%;
-  }
-}
+    width: 90vw;
 
-@media (max-width: 768px) {
-  .workExperience {
-    padding: 2rem 1rem;
-    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-
-  .workExperience-left {
-    align-items: center;
+  .mainHead {
     text-align: center;
   }
-
-  .workExperienceDisplay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+  .workExperience {
+    padding: 0;
   }
 
-  .card-top-right,
-  .card-bottom-left,
-  .card-center {
-    position: static;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  .card-wrapper {
+    flex: 1 1 100%;
+    margin: 0;
   }
 
-  .workExperienceCards {
-    width: 90%;
-    max-width: 400px;
-  }
-
-  .workExperience-left > :nth-child(1),
-  .workExperience-left > :nth-child(2) {
+  .workExperience-heading h2 {
     font-size: 2rem;
   }
 
-  .workExperience-left > :nth-child(3) {
+  .workExperience-heading p {
     font-size: 13px;
   }
 
-  ul {
-    list-style: none !important;
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-    text-align: center;
-  }
-
-  li {
-    text-align: center;
-    margin: 0.5rem 0;
-  }
-}
-
-@media (max-width: 480px) {
-  ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: center;
-  }
-
-  li {
-    margin: 0.5rem 0;
-    text-align: center;
+  .workExperience-title {
+    justify-content: center;
   }
 }

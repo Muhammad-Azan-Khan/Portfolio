@@ -34,4 +34,18 @@
     display: block;
     width: 100%;
   }
+
+  .projectsDiv {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  .projectCards {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box;
+  }
 }

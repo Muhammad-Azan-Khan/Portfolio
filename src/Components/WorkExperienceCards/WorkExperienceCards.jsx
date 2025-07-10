@@ -29,49 +29,47 @@ function WorkExperienceCards({ info }) {
   const darkMode = theme.state.darkMode;
 
   return (
-    <>
-      <motion.div
-        className="workExperienceCards"
-        style={{ background: darkMode ? "black" : "" }}
-        variants={parentVariant}
-        initial="hidden"
-        whileInView="visible"
+    <motion.div
+      className="workExperienceCards"
+      style={{ background: darkMode ? "black" : "" }}
+      variants={parentVariant}
+      initial="hidden"
+      whileInView="visible"
+    >
+      <motion.h2
+        style={{ color: darkMode ? "orange" : "" }}
+        variants={childVariant}
       >
-        <motion.h2
-          style={{ color: darkMode ? "orange" : "" }}
+        {info.title}
+      </motion.h2>
+
+      <motion.ul className="list" variants={parentVariant}>
+        <motion.li
+          style={{ color: darkMode ? "white" : "" }}
           variants={childVariant}
         >
-          {info.title}
-        </motion.h2>
-
-        <motion.ul className="list" variants={parentVariant}>
-          <motion.li
-            style={{ color: darkMode ? "white" : "" }}
-            variants={childVariant}
-          >
-            {info.text1}
-          </motion.li>
-          <motion.li
-            style={{ color: darkMode ? "white" : "" }}
-            variants={childVariant}
-          >
-            {info.text2}
-          </motion.li>
-          <motion.li
-            style={{ color: darkMode ? "white" : "" }}
-            variants={childVariant}
-          >
-            {info.text3}
-          </motion.li>
-          <motion.li
-            style={{ color: darkMode ? "white" : "" }}
-            variants={childVariant}
-          >
-            {info.text4}
-          </motion.li>
-        </motion.ul>
-      </motion.div>
-    </>
+          {info.text1}
+        </motion.li>
+        <motion.li
+          style={{ color: darkMode ? "white" : "" }}
+          variants={childVariant}
+        >
+          {info.text2}
+        </motion.li>
+        <motion.li
+          style={{ color: darkMode ? "white" : "" }}
+          variants={childVariant}
+        >
+          {info.text3}
+        </motion.li>
+        <motion.li
+          style={{ color: darkMode ? "white" : "" }}
+          variants={childVariant}
+        >
+          {info.text4}
+        </motion.li>
+      </motion.ul>
+    </motion.div>
   );
 }
 

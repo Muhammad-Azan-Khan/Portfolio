@@ -1,4 +1,3 @@
-import React from "react";
 import "./Services.css";
 import ServicesCards from "../Services-cards/Services-cards";
 import { serviceCard } from "../../constants";
