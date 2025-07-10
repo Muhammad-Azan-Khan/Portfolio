@@ -1,5 +1,7 @@
 .card {
-  width: 10rem;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
   height: 13rem;
   display: flex;
   flex-direction: column;
@@ -11,6 +13,7 @@
   box-shadow: 0 0 20px var(--orange);
   border-radius: 20px;
   padding: 0 26px 2rem 26px;
+  text-align: center;
 }
 
 .card:hover {
@@ -19,14 +22,15 @@
   box-shadow: 0 0px 40px rgb(177, 116, 4);
 }
 
+.card > img {
+  transform: scale(0.6);
+  margin-bottom: -2rem;
+}
+
 .card > :nth-child(3) {
   font-size: 16px;
   color: var(--gray);
   text-align: center;
-}
-.card > img {
-  transform: scale(0.6);
-  margin-bottom: -2rem;
 }
 
 .card > button {
@@ -38,6 +42,14 @@
   font-size: 16px;
   color: #5290fd;
 }
+
 .card > button:hover {
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    max-width: 300px;
+  }
 }

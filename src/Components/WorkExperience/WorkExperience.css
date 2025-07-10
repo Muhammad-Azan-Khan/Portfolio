@@ -140,4 +140,29 @@
   .workExperience-left > :nth-child(3) {
     font-size: 13px;
   }
+
+  ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
 }

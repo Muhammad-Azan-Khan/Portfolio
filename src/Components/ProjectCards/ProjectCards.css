@@ -1,7 +1,6 @@
 .outer {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 .outer a {
@@ -47,4 +46,22 @@
   font-size: 14px;
   color: var(--gray);
   line-height: 1.4;
+}
+
+@media (max-width: 743px) {
+  .projectCards {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .portfolio > span {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .projectsDiv {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }

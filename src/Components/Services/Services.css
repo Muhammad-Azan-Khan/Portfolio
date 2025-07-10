@@ -1,174 +1,133 @@
 .services {
-  padding: 0 3rem 3rem;
-  display: flex;
-
-  height: 90vh;
-  margin-top: 18rem;
-  margin-bottom: 13rem;
-  display: flex;
-  align-items: center;
-}
-.services-left {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin-top: 6rem;
+  gap: 3rem;
 }
 
-.services-left > :nth-child(1) {
+.services-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+}
+
+.services-left > span:nth-child(1),
+.services-left > span:nth-child(2) {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.services-left > span:nth-child(1) {
   color: var(--black);
-  font-size: 2.5rem;
-  font-weight: bold;
 }
-.services-left > :nth-child(2) {
+
+.services-left > span:nth-child(2) {
   color: var(--orange);
-  font-size: 2.5rem;
-  font-weight: bold;
 }
-.services-left > :nth-child(3) {
-  font-weight: 500;
-  color: var(--gray);
+
+.services-left > span:nth-child(3) {
   font-size: 14px;
-  margin-top: 5px;
+  color: var(--gray);
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  padding: 0 1rem;
 }
 
 .services-button {
+  margin-top: 1.5rem;
   width: 8rem;
   height: 2rem;
-  margin-top: 1rem;
 }
+
 .services-right {
-  flex: 1;
-  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .displayCards {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 500px;
+  gap: 2rem;
 }
 
-.card-one {
-  position: absolute;
-  top: 0;
-  right: 5%;
-}
-
-.card-two {
-  position: absolute;
-  margin-left: 20px;
-  margin-top: 100px;
-}
-
+.card-one,
+.card-two,
 .card-three {
-  position: absolute;
-  margin-left: 320px;
-  margin-top: 370px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .services {
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    height: auto;
-    margin-top: 8rem;
-    margin-bottom: 6rem;
-    gap: 2rem;
-  }
-
-  .services-left {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-  }
-
-  .services-left > :nth-child(1),
-  .services-left > :nth-child(2) {
-    font-size: 2rem;
-  }
-
-  .services-left > :nth-child(3) {
-    font-size: 13px;
-  }
-
-  .services-button {
-    margin: 1.5rem auto 0;
-  }
-
-  .services-right {
-    width: 100%;
-    height: auto;
-  }
-
+@media (min-width: 768px) {
   .displayCards {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    height: auto;
-  }
-
-  .card-one,
-  .card-two,
-  .card-three {
-    position: static;
-    margin: 0;
-  }
-}
-
-@media (max-width: 1443px) {
-  .services {
-    flex-direction: column;
-    padding: 3rem 2rem;
-    height: auto;
-    margin-top: 10rem;
-    margin-bottom: 7rem;
-    gap: 3rem;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .services-left {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-  }
-
-  .services-left > :nth-child(1),
-  .services-left > :nth-child(2) {
-    font-size: 2.2rem;
-  }
-
-  .services-left > :nth-child(3) {
-    font-size: 14px;
-    max-width: 600px;
-  }
-
-  .services-button {
-    margin-top: 1.5rem;
-  }
-
-  .services-right {
-    width: 100%;
-    height: auto;
-  }
-
-  .displayCards {
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
-    position: static;
-    height: auto;
-    margin-top: 1rem;
+    justify-content: center;
   }
 
   .card-one,
   .card-two,
   .card-three {
-    position: static;
-    margin: 0;
-    width: 30%;
-    min-width: 250px;
+    width: 260px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 4rem;
+  }
+
+  .services-left {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .displayCards {
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1450px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .services-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .displayCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    margin: 0 auto;
   }
 }
