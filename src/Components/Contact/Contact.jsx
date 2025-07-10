@@ -3,7 +3,6 @@ import { themeContext } from "../../../Content";
 import { useContext } from "react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
 function Contact() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
