@@ -1,0 +1,28 @@
+.portfolio {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio > :nth-child(1) {
+  color: var(--black);
+  font-size: 2rem;
+}
+
+.portfolio > :nth-child(2) {
+  color: var(--orange);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.projectsDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}

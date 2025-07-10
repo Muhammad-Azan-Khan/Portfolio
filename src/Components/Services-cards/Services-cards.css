@@ -1,0 +1,43 @@
+.card {
+  width: 10rem;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--orange);
+  box-shadow: 0 0 20px var(--orange);
+  border-radius: 20px;
+  padding: 0 26px 2rem 26px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0px 40px rgb(177, 116, 4);
+}
+
+.card > :nth-child(3) {
+  font-size: 16px;
+  color: var(--gray);
+  text-align: center;
+}
+.card > img {
+  transform: scale(0.6);
+  margin-bottom: -2rem;
+}
+
+.card > button {
+  background: #ffffff;
+  border-radius: 7px;
+  box-shadow: 0 19px 60px rgba(0, 0, 0, 0.08);
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #5290fd;
+}
+.card > button:hover {
+  cursor: pointer;
+}

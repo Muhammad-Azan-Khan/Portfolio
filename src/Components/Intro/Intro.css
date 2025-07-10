@@ -1,0 +1,139 @@
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 77vh;
+  margin-top: 6rem;
+  padding: 0 3rem 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.intro-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2rem;
+}
+
+.intro-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-name-first {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.intro-name-second {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.intro-name-third {
+  font-weight: 500;
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 5px;
+  max-width: 500px;
+}
+
+.intro-icons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.icons-adj {
+  transform: scale(0.5);
+}
+
+.icons-adj:hover {
+  cursor: pointer;
+}
+
+.intro-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.computer {
+  height: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0;
+  transform: none;
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: auto;
+  }
+
+  .intro-left,
+  .intro-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro-name-first,
+  .intro-name-second {
+    font-size: 2.5rem;
+  }
+
+  .intro-name-third {
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  .intro-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .computer {
+    transform: scale(1);
+    margin-top: 40px;
+    height: 250px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-name-first,
+  .intro-name-second {
+    font-size: 2rem;
+  }
+
+  .intro-name-third {
+    font-size: 13px;
+    padding: 0 1rem;
+  }
+
+  .intro-icons {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .icons-adj {
+    transform: scale(0.4);
+  }
+
+  .computer {
+    height: 220px;
+    margin-top: 30px;
+    transform: scale(1);
+  }
+}

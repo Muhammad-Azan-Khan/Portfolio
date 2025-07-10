@@ -1,0 +1,143 @@
+.workExperience {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  gap: 2rem;
+}
+.workExperience-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.workExperience-left > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.workExperience-left > :nth-child(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.workExperience-left > :nth-child(3) {
+  font-weight: 500;
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.workExperience-right {
+  flex: 1;
+  position: relative;
+  height: 500px;
+}
+
+.workExperienceDisplay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.card-top-right {
+  position: absolute;
+  top: -30%;
+  right: -7%;
+}
+
+.card-bottom-left {
+  position: absolute;
+  bottom: 25%;
+  left: -48%;
+}
+
+.card-center {
+  position: absolute;
+  top: 72%;
+  left: 29%;
+}
+
+@media (max-width: 1443px) {
+  .workExperience {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    height: auto;
+    align-items: center;
+  }
+
+  .workExperience-left,
+  .workExperience-right {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .workExperienceDisplay {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: static;
+    height: auto;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .card-top-right,
+  .card-bottom-left,
+  .card-center {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .workExperienceCards {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .workExperience {
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  .workExperience-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .workExperienceDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .card-top-right,
+  .card-bottom-left,
+  .card-center {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .workExperienceCards {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .workExperience-left > :nth-child(1),
+  .workExperience-left > :nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .workExperience-left > :nth-child(3) {
+    font-size: 13px;
+  }
+}

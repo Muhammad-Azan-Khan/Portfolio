@@ -1,0 +1,174 @@
+.services {
+  padding: 0 3rem 3rem;
+  display: flex;
+
+  height: 90vh;
+  margin-top: 18rem;
+  margin-bottom: 13rem;
+  display: flex;
+  align-items: center;
+}
+.services-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-left > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.services-left > :nth-child(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.services-left > :nth-child(3) {
+  font-weight: 500;
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.services-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+.services-right {
+  flex: 1;
+  position: relative;
+}
+
+.displayCards {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.card-one {
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+
+.card-two {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+.card-three {
+  position: absolute;
+  margin-left: 320px;
+  margin-top: 370px;
+}
+
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    height: auto;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    gap: 2rem;
+  }
+
+  .services-left {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .services-left > :nth-child(1),
+  .services-left > :nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .services-left > :nth-child(3) {
+    font-size: 13px;
+  }
+
+  .services-button {
+    margin: 1.5rem auto 0;
+  }
+
+  .services-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .displayCards {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    height: auto;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three {
+    position: static;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1443px) {
+  .services {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    height: auto;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services-left {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .services-left > :nth-child(1),
+  .services-left > :nth-child(2) {
+    font-size: 2.2rem;
+  }
+
+  .services-left > :nth-child(3) {
+    font-size: 14px;
+    max-width: 600px;
+  }
+
+  .services-button {
+    margin-top: 1.5rem;
+  }
+
+  .services-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .displayCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: static;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three {
+    position: static;
+    margin: 0;
+    width: 30%;
+    min-width: 250px;
+  }
+}
