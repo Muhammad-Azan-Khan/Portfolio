@@ -4,6 +4,7 @@ import ServicesCards from "../Services-cards/Services-cards";
 import { serviceCard } from "../../constants";
 import { themeContext } from "../../../Content";
 import { useContext } from "react";
+import CV from "./Muhammad_Azan_Khan.pdf";
 
 function Services() {
   const theme = useContext(themeContext);
@@ -18,7 +19,7 @@ function Services() {
           code magic. From visuals to logic — I mix creativity with C++ power
           under the hood.
         </span>
-        <a href={"Resume"} download>
+        <a href={CV} download>
           <button className="services-button button">Download CV</button>
         </a>
       </div>
